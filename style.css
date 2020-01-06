@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    padding: 10px 0;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header li:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+header .starter {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 3px;
+    border: 1px solid hsl(0, 94%, 66%);
+}
+
+header .starter:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+}
+
+.manager {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.manager-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.manager-info-initial {
+    transform: translateY(-30px);
+}
+
+.manager-info h1 {
+    font-size: 40px;
+    padding: 30px 0 20px 0;
+}
+
+.manager-info p {
+    color: hsl(229, 8%, 60%);
+    padding-bottom: 20px;
+}
+
+.manager-image {
+    width: 53%;
+}
+
+.manager-image img {
+    margin-left: 50px;
+    width: 100%;
+}
+
+.manager-buttons {
+    display: flex;
+}
+
+.manager button {
+    padding: 10px 25px;
+    border-radius: 6px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    margin-right: 15px;
+}
+
+.manager-buttons .left-btn button:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+
+.manager-buttons .right-btn button:hover {
+    background-color: white;
+    color: hsl(229, 31%, 21%);
+    border: 1px solid hsl(229, 31%, 21%);
+}
+
+.features {
+    text-align: center;
+}
+
+.features-header {
+    width: 50%;
+    margin: auto;
+}
+
+.features-header h1 {
+    padding-bottom: 25px;
+}
+
+.features-header p {
+    color: hsl(229, 8%, 60%);
+    padding: 0 20px 25px 20px;
+}
+
+.features-tabs ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.features-tabs ul li {
+    padding: 10px 20px;
+    background-color: wheat;
+    color: hsl(229, 8%, 60%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right: 1px solid hsl(229, 8%, 60%);
+    cursor: pointer;
+}
+
+#simple {
+    border-bottom: 2px solid red;
+}
+
+.features-tabs ul li:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.features-tab .manager-image {
+    margin: 0;
+    width: 43%;
+}
+
+.features-tab .manager-image img {
+    margin-left: 0;
+}
+
+.features-tab2,
+.features-tab3 {
+    display: none;
+}
+
+.download {
+    width: 80%;
+    margin: 70px auto 120px;
+    text-align: center;
+}
+
+.download h1 {
+    padding: 20px
+}
+
+.download p {
+    width: 50%;
+    margin: auto;
+    color: hsl(229, 8%, 60%);
+}
+
+.browsers {
+    margin: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.chrome,
+.firefox,
+.opera {
+    margin: 0 20px;
+    padding: 30px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+}
+
+.install-btn,
+.faq-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 4px;
+}
+
+.install-btn:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 1px solid hsl(231, 69%, 60%);
+}
+
+.firefox {
+    transform: translateY(30px);
+}
+
+.opera {
+    transform: translateY(60px);
+}
+
+.faq {
+    width: 80%;
+    margin: 70px auto 120px;
+    text-align: center;
+}
+
+.faq h1 {
+    padding: 20px
+}
+
+.faq p {
+    width: 50%;
+    margin: auto;
+    color: hsl(229, 8%, 60%);
+}
+
+.question {
+    margin-top: 70px;
+}
+
+.faq-q {
+    width: 50%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid hsl(229, 8%, 60%);
+    cursor: pointer;
+}
+
+.faq-a {
+    display: none;
+}
+
+.q1:hover h2 {
+    color: red;
+}
+
+.q2:hover h2 {
+    color: red;
+}
+
+.q3:hover h2 {
+    color: red;
+}
+
+.q4:hover h2 {
+    color: red;
+}
+
+.contact {
+    margin: 30px 0 0 0;
+    padding: 50px 0;
+    text-align: center;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+
+.contact p {
+    color: hsl(229, 8%, 60%);
+    padding-bottom: 30px;
+}
+
+.contact label {
+    padding: 10px 20px;
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 4px;
+}
+
+.contact label:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 1px solid hsl(0, 94%, 66%);
+}
+
+.contact form {
+    padding-top: 30px;
+}
+
+.contact input {
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.contact input:focus {
+    outline: 2px solid hsl(0, 94%, 66%);
+}
+
+.social-media {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.details {
+    display: flex;
+}
+
+.details img {
+    margin-right: 40px;
+}
+
+.details h3 {
+    align-self: center;
+    font-size: 12px;
+    padding: 0 15px;
+}
+
+.sm {
+    padding: 0 15px;
+}
